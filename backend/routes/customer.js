@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { body, validationResult } = require('express-validator');
-const Customer = require('../models/Customer');
+const Customer = require('../models/customer');
 
 // @route   POST api/customer/addcustomer
 // @desc    Add a  to the customer database

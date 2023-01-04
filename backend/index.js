@@ -21,7 +21,7 @@ app.use('/api/stock', require('./routes/stock'))
 app.use('/api/customer', require('./routes/customer'))
 app.use('/api/product', require('./routes/product'))
 app.use('/api/sales', require('./routes/sales'))
-app.use('/api/staticfinance', require('./routes/staticfinance'))
+//app.use('/api/staticfinance', require('./routes/staticfinance'))
 
 
 app.listen(port, () => {

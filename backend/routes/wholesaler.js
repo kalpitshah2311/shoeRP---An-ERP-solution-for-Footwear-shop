@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { body, validationResult } = require('express-validator');
-const Wholesaler = require('../models/Wholesaler');
+const Wholesaler = require('../models/wholesaler');
 
 // @route   POST api/wholesaler/addwholesaler
 // @desc    Add a wholesaler to the database

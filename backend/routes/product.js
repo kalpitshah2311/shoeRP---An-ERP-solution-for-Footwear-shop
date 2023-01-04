@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const { body, validationResult } = require('express-validator');
-const Product = require('../models/Product');
-const Purchase = require('../models/Purchase');
+const Product = require('../models/product');
+const Purchase = require('../models/purchase');
 //get product by purchase id
 router.get('/getproductbypurchaseid/:purchase_id', async (req, res) => {
     try {

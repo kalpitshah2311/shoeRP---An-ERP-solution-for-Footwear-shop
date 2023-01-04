@@ -1,11 +1,19 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')
 
-const mongoURI = "mongodb://localhost:27017/shoeRP";
-//db connect
+const url = `mongodb+srv://dcoder:Kalpit2311%40@cluster0.m20z1um.mongodb.net/shoeRP?retryWrites=true&w=majority`;
+
+const connectionParams={
+    useNewUrlParser: true,
+    //useCreateIndex: true,
+    useUnifiedTopology: true 
+}
 const connectToMongo = ()=>{
-    mongoose.connect(mongoURI, ()=>{
-        console.log("Connected to Mongo Successfully");
+    mongoose.connect(url,connectionParams)
+    .then( () => {
+        console.log('Connected to database ')
+    })
+    .catch( (err) => {
+        console.error(`Error connecting to the database. \n${err}`);
     })
 }
-
 module.exports = connectToMongo;

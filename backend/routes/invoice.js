@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const { body, validationResult } = require('express-validator');
-const Invoice = require('../models/Invoice');
-const Customer = require('../models/Customer');
-const Product = require('../models/Product');
-const Stock = require('../models/Stock');
+const Invoice = require('../models/invoice');
+const Customer = require('../models/customer');
+const Product = require('../models/product');
+const Stock = require('../models/stock');
 
 // @route   POST api/invoice/addinvoice
 // @desc    Add a  to the invoice database

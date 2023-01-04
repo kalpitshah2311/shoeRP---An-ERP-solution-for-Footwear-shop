@@ -1,0 +1,14 @@
+#config node js installation and version for deployment on circleci
+version: 1
+jobs:
+  build:
+    docker:
+      - image: circleci/node:8.11.3
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm run build
+      - run: npm run test
+      - run: npm run deploy
+      #run node js server
+      - run: node index.js

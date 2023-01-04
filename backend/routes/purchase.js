@@ -2,10 +2,10 @@ const { request } = require('express');
 const express = require('express');
 const router = express.Router();
 const { body, validationResult } = require('express-validator');
-const Purchase = require('../models/Purchase');
-const Wholesaler = require('../models/Wholesaler');
-const Product = require('../models/Product');
-const Stock = require('../models/Stock');
+const Purchase = require('../models/purchase');
+const Wholesaler = require('../models/wholesaler');
+const Product = require('../models/product');
+const Stock = require('../models/stock');
 
 // @route   POST api/purchase/addpurchase
 // @desc    Add a  to the purchase database
